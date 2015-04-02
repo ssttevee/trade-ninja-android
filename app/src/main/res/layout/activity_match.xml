@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingBottom="@dimen/activity_vertical_margin"
+		android:background="@color/background_material_dark">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<include layout="@layout/listviewitem_match"/>
+
+		<Button
+				android:id="@+id/match_info_stream_button"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:visibility="gone"
+				android:background="@color/trade_ninja_button_green"
+				android:onClick="goToStream"
+				android:text="Go to Stream"/>
+
+		<LinearLayout
+				android:id="@+id/match_info_misc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:padding="@dimen/activity_vertical_margin"
+				android:background="#111111"
+				android:orientation="vertical">
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/match_info_your_bet"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:visibility="gone"
+				android:padding="@dimen/activity_vertical_margin"
+				android:background="#111111"
+				android:orientation="vertical">
+
+		</LinearLayout>
+
+		<LinearLayout
+				android:id="@+id/match_info_place_bet"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/activity_vertical_margin"
+				android:visibility="gone"
+				android:padding="@dimen/activity_vertical_margin"
+				android:background="#111111"
+				android:orientation="vertical">
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/activity_vertical_margin"
+					android:textSize="20sp"
+					android:textStyle="bold"
+					android:text="Place Bet"/>
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Choose Team"/>
+
+			<RadioGroup
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/activity_vertical_margin"
+					android:orientation="horizontal"
+					android:gravity="left">
+
+				<RadioButton
+						android:id="@+id/match_info_place_bet_team_1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:paddingRight="32dp"
+						android:button="@drawable/white_radio"
+						android:onClick="onRadioButtonClicked"/>
+				<RadioButton
+						android:id="@+id/match_info_place_bet_team_2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:button="@drawable/white_radio"
+						android:onClick="onRadioButtonClicked"/>
+
+			</RadioGroup>
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Choose Amount"/>
+
+			<EditText
+					android:id="@+id/match_info_place_bet_credits"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/activity_vertical_margin"
+					android:hint="Credits"
+					android:text="10"
+					android:inputType="number"/>
+
+			<TextView
+					android:id="@+id/match_info_place_bet_potential_reward"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/activity_vertical_margin"
+					android:text="Potential Reward: --"
+					android:focusable="true"
+					android:focusableInTouchMode="true"/>
+
+			<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Rules"
+					android:focusable="true"
+					android:focusableInTouchMode="true"/>
+
+			<CheckBox
+					android:id="@+id/match_info_place_bet_rules"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="I agree with the rules."/>
+
+			<Button
+					android:id="@+id/match_info_place_bet_submit"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/activity_vertical_margin"
+					android:background="@color/trade_ninja_button_green"
+					android:enabled="false"
+					android:onClick="submitPlaceBet"
+					android:text="Place Bet"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>

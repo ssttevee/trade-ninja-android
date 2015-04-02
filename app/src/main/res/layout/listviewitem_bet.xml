@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/activity_vertical_margin"
+		android:background="@drawable/trade_ninja_bets_green">
+
+	<LinearLayout
+			android:id="@+id/bet_info_credits"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:gravity="center"
+			android:orientation="vertical">
+
+		<TextView
+				android:id="@+id/bet_info_amount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/primary_text_default_material_dark"
+				android:textSize="18sp"
+				android:text="Bet: 10"/>
+
+		<TextView
+				android:id="@+id/bet_info_reward"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="@color/secondary_text_default_material_dark"
+				android:text="(PR: 2)"/>
+
+	</LinearLayout>
+
+	<TextView
+			android:id="@+id/bet_info_team_1_chance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toLeftOf="@id/bet_info_credits"
+			android:padding="6dp"
+			android:textColor="@color/secondary_text_default_material_dark"
+			android:textSize="16sp"
+			android:text="[80%]"/>
+
+	<TextView
+			android:id="@+id/bet_info_team_2_chance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_toRightOf="@id/bet_info_credits"
+			android:padding="6dp"
+			android:textColor="@color/secondary_text_default_material_dark"
+			android:textSize="16sp"
+			android:text="[20%]"/>
+
+	<LinearLayout
+			android:id="@+id/bet_info_team_1_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentLeft="true"
+			android:layout_toLeftOf="@id/bet_info_team_1_chance"
+			android:gravity="center"
+			android:orientation="vertical">
+
+		<ImageView
+				android:id="@+id/bet_info_team_1_icon"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:scaleType="fitCenter"/>
+
+		<TextView
+				android:id="@+id/bet_info_team_1_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:textColor="@color/primary_text_default_material_dark"
+				android:textSize="22sp"
+				android:text="Ignite"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:id="@+id/bet_info_team_2_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_toRightOf="@id/bet_info_team_2_chance"
+			android:gravity="center"
+			android:orientation="vertical">
+
+		<ImageView
+				android:id="@+id/bet_info_team_2_icon"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:scaleType="fitCenter"/>
+
+		<TextView
+				android:id="@+id/bet_info_team_2_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:textColor="@color/primary_text_default_material_dark"
+				android:textSize="22sp"
+				android:text="Ignite"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

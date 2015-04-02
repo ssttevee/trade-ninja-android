@@ -1,0 +1,12 @@
+https://www.trade.ninja/ajax/?action=create_tradeoffer&type=0&items=["3-1384762047"]&actionkey=YVIedJZHzY
+
+items = array["gameId-itemId"]
+type = ???
+
+
+{"success":true,"id":68809}
+
+id = trade offer id (use with get_tradeoffer_status)
+
+
+{"success":false,"status_message":"One or more of the items are not tradable."}

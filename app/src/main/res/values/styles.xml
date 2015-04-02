@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+		<item name="android:textColor">@color/primary_text_default_material_dark</item>
+		<item name="android:windowIsTranslucent">true</item>
+
+		<item name="android:editTextStyle">@style/App_EditTextStyle</item>
+		<item name="android:radioButtonStyle">@style/App_RadioButtonStyle</item>
+		<item name="android:checkboxStyle">@style/App_CheckBoxStyle</item>
+		<item name="android:itemTextAppearance">@style/App_ActionMenuTextAppearance</item>
+    </style>
+
+	<style name="App_EditTextStyle" parent="@android:style/Widget.EditText">
+		<item name="android:background">@drawable/abc_textfield_search_material</item>
+		<item name="android:textColor">@color/primary_text_default_material_dark</item>
+		<item name="android:textColorHint">@color/primary_text_disabled_material_dark</item>
+	</style>
+
+	<style name="App_RadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+		<item name="android:button">@drawable/white_radio</item>
+		<item name="android:textColor">@color/primary_text_default_material_dark</item>
+	</style>
+
+	<style name="App_CheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+		<item name="android:button">@drawable/white_checkbox</item>
+		<item name="android:textColor">@color/primary_text_default_material_dark</item>
+	</style>
+
+	<style name="App_ActionMenuTextAppearance" parent="android:style/TextAppearance.Widget.IconMenu.Item">
+		<item name="android:textColor">@color/primary_text_default_material_light</item>
+	</style>
+
+</resources>

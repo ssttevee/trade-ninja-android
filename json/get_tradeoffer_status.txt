@@ -1,0 +1,14 @@
+https://www.trade.ninja/ajax/?action=get_tradeoffer_status&tradeoffer=68809&actionkey=YVIedJZHzY
+
+tradeoffer = trade offer id (from create_tradeoffer)
+
+
+{"success":true,"tradeoffer":{"id":68809,"steam_id":357208874,"time":44,"bot":3,"user":8246,"type":0,"credits":8,"captcha_text":"","status":4,"captcha_image":""}}
+
+status=1: trade offer queued
+status=2: creating trade offer
+status=3: waiting for user to accept trade offer
+status=4: user canceled trade offer
+
+
+{"success":false,"status_message":"Bad request."}

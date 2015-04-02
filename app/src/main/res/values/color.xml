@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="trade_ninja_bets_gray">#80333333</color>
+	<color name="trade_ninja_bets_red">#80CC3333</color>
+	<color name="trade_ninja_bets_orange">#80FF9933</color>
+	<color name="trade_ninja_bets_green">#8066CC33</color>
+	<color name="trade_ninja_button_green">#FF456E14</color>
+	<color name="trade_ninja_shopitem_white">#FFD2D2D2</color>
+	<color name="trade_ninja_shopitem_orange">#FFCF6A32</color>
+</resources>
